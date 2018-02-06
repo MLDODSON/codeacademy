@@ -89,6 +89,103 @@ let person = "Mudbone";
 let town = "Tupelo, Misssissippi";
 console.log(`My name is ${person}. I was born in ${town}.`);
 
+//Lesson 10. If/Else
+
+let isSoccerFan = true;
+if (isSoccerFan === true) {
+  console.log('Goal!');
+} else {
+  console.log('No goal!');
+}
 
 
+let wordCount = "Great! You've started your work!";
 
+if (wordCount) {
+  console.log("Great! You've started your work!");
+} else {
+  console.log('Better get to work!');
+}
+
+
+let favoritePhrase = "This string doesn't seem to be empty.";
+
+if (favoritePhrase) {
+  console.log("This string doesn't seem to be empty.");
+} else {
+  console.log('This string is definitely empty.');
+}
+
+
+if (!favoritePhrase) { //Placing the ! in front of favoritePhrase caused it to be false so the else printed to the console.
+  console.log("This string doesn't seem to be empty.");
+} else {
+  console.log('This string is definitely empty.');
+}
+
+// Comparison Operators
+let hungerLevel = 10;
+
+if (hungerLevel > 7) {
+  console.log("Time to eat!");
+} else {
+  console.log("We can eat later!");
+}
+
+let moonPhase = "solar eclipse";
+
+if (moonPhase === "full") {
+  console.log("Howl!");
+} else if (moonPhase === "mostly full") {
+  console.log("Arms and legs are getting hairier.");
+} else if (moonPhase === "mostly new") {
+  console.log("Back on two feet.");
+} else {
+  console.log("Invalid moon phase.");
+}
+
+//Logical Operators
+let moonNight = "full";
+let isFoggyNight = true;
+
+if (moonNight === "full" || isFoggyNight === false) {
+  console.log("Howl!");
+} else if (moonNight === "mostly full") {
+  console.log("Arms and legs are getting hairier.");
+} else if (moonNight === "mostly new") {
+  console.log("Back on two feet.");
+} else {
+  console.log("Invalid moon phase.");
+}
+
+
+if (moonNight === "full" && isFoggyNight === true) {
+  console.log("Howl!");
+} else if (moonNight === "mostly full") {
+  console.log("Arms and legs are getting hairier.");
+} else if (moonNight === "mostly new") {
+  console.log("Back on two feet.");
+} else {
+  console.log("Invalid moon phase.");
+}
+
+//When using && both conditions had to be true for it to be true. On the other hand when using || only 1 condition had to be true.
+
+// Switch Statements
+
+let howlTime = "full";
+
+switch (howlTime) {
+  case "full":
+    console.log("Werewolves transform!");
+    break;
+   case "mostly full":
+    console.log("Arms and legs are getting hairier");
+    break;
+  case "mostly new":
+    console.log("Back on two feet");
+    break;
+   default:
+    console.log("Invalid moon phase");
+    break;
+}
